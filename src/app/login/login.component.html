@@ -9,25 +9,28 @@
       <p style="margin: 90px 0 20px 0; font-size: 20pt">ยินดีต้อนรับ!</p>
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <mat-form-field appearance="outline" style="border: white">
-          <mat-label>ชื่อบัญชี</mat-label>
+          <!-- <mat-label>ชื่อบัญชี</mat-label> -->
           <input
             matInput
             type="text"
             formControlName="username"
             placeholder="ชื่อบัญชี.."
           />
+          <span class="material-icons"> person </span>
           <mat-error *ngIf="!loginForm.hasError('required')">
             กรุณาระบุชื่อ <strong>บัญชีผู้ใช้งาน</strong>
           </mat-error></mat-form-field
         >
         <mat-form-field appearance="outline">
-          <mat-label>รหัสผ่าน</mat-label>
+          <!-- <mat-label>รหัสผ่าน</mat-label> -->
           <input
             matInput
             type="password"
             formControlName="password"
             placeholder="รหัสผ่าน.."
-          /><mat-error *ngIf="!loginForm.hasError('required')">
+          />
+          <span class="material-icons"> lock </span>
+          <mat-error *ngIf="!loginForm.hasError('required')">
             กรุณาระบุ <strong>รหัสผ่าน</strong>
           </mat-error>
         </mat-form-field>
