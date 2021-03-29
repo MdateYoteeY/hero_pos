@@ -1,3 +1,4 @@
+import { UserComponent } from './user/user.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
@@ -47,7 +48,7 @@ import { CommonModule } from '@angular/common';
 import { AuthorizationComponent } from './authorization/authorization.component';
 import { BasicAuthInterceptor } from './_helpers/BasicAuthInterceptor.interceptor';
 import { ErrorInterceptor } from './_helpers/error.interceptor';
-import { UserComponent } from './user/user.component';
+
 
 @NgModule({
   declarations: [
